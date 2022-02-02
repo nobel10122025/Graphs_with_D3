@@ -42,7 +42,7 @@ function BarGraph() {
 
     const xScale = scaleTime()
     .domain([min(data, d => dateConversion(d[0])), max(data, d => dateConversion(d[0]))])
-    .range([0, innerWidth]);
+    .range([0, innerWidth])
 
     if(!data){
         return <div>Loading...</div>
