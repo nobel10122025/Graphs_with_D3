@@ -1,0 +1,21 @@
+h1 , div{
+    text-align: center;
+}
+svg{
+    margin: 30px;
+}
+circle{
+    fill : #003f5c;
+}
+circle:hover{
+    fill:#ffa600;
+}
+text{
+    fill: #635F5D;
+}
+line{
+    stroke: #C0C0BB;
+}
+.axis-label{
+    font-size: 2rem;
+}

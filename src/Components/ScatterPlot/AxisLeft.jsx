@@ -1,17 +1,17 @@
 import React from 'react';
 import {format} from 'd3';
 
-function AxisLeft({innerHeight , yScale}) {
+function AxisLeft({innerHeight , yScale , innerWidth}) {
   return (
   <>
     <line y2={innerHeight} stroke='black'/>   
-    <text>Gross Domestic Product</text>
     {
         yScale.ticks().map((tickValue , index) => (
-            <g transform={`translate(2,${innerHeight-yScale(tickValue) + 15})`} key={index}>
-                <text textAnchor='start'>
+            <g transform={`translate(0,${yScale(tickValue)})`} key={index}>
+                <text textAnchor='start' x={-25}>
                     {format(",.2r")(tickValue)}
                 </text>
+                <line x2={innerWidth} />
             </g>
         ))
     }
