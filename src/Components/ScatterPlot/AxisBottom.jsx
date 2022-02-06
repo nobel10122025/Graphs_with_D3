@@ -13,7 +13,7 @@ function AxisBottom({xScale , innerHeight , innerWidth}) {
             xScale.ticks().map((tickValue , index) => (
                 <g transform={`translate(${xScale(tickValue)})`} key={index}>
                     <line y2={innerHeight} />
-                    <text textAnchor='start' y={`${innerHeight + 20}`}>
+                    <text textAnchor='start' y={`${innerHeight + 10}`} dy="0.32em">
                        {tickValue}
                     </text>
                 </g>

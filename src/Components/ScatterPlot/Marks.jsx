@@ -6,7 +6,9 @@ function Marks({
   innerHeight , 
   data ,
   xValue,
-  yValue
+  yValue,
+  colorScale,
+  colorValue
 }) {
  
   return (
@@ -18,6 +20,7 @@ function Marks({
               cy={yScale(yValue(d))} 
               r={7}
               key={index}
+              fill={colorScale(colorValue(d))}
           />     
       )
     }   

@@ -4,12 +4,6 @@ h1 , div{
 svg{
     margin: 30px;
 }
-circle{
-    fill : #003f5c;
-}
-circle:hover{
-    fill:#ffa600;
-}
 text{
     fill: #635F5D;
 }
@@ -18,4 +12,17 @@ line{
 }
 .axis-label{
     font-size: 2rem;
+}
+.menu-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+.menu-label{
+    margin: 1rem;
+}
+.color-legend text{
+    cursor: default;
+    fill: #635F5D;
 }
