@@ -7,6 +7,7 @@ function ColorLegend({colorScale , innerWidth , onHover , hoverValue}) {
         onMouseOut={() =>onHover(null)}
         opacity = {hoverValue && hoverValue !== data ? 0.4 : 1}
         className="color-legend"
+        key={index}
         >
             <circle fill={colorScale(data)} r={7}/>
             <text x ="10" dy="0.32em">{data}</text>

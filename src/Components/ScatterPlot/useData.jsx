@@ -17,7 +17,6 @@ export function useData() {
         }
         csv(csvUrl , row).then(setData);
     },[])
-    console.log(data)
     return data
 }
 
