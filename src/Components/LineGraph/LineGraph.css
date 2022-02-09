@@ -7,3 +7,32 @@
 .line-graph circle{
     fill: #137B80;
 }
+.axis-label{
+    font-size: 1.2rem;
+}
+.search-bar{
+    width: 15rem;
+    height: 2.5rem;
+    margin: 2rem;
+    padding: 1rem;
+    outline: none;
+    border: 2px solid hsl(212, 100%, 25%);
+    border-radius: 0.5rem;
+}
+.search-bar:focus{
+    border: 2px solid hsl(212, 100%, 50%);
+}
+.submit-btn{
+    width: 5rem;
+    height: 2.5rem;
+    color: white;
+    background-color: hsl(212, 100%, 25%);
+    outline: none;
+    transition: all 300ms ease;
+    border: 0;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+.submit-btn:hover{
+    background-color: hsl(212, 100%, 50%);
+}

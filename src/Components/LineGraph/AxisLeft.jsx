@@ -7,6 +7,7 @@ function AxisLeft({yScale , innerWidth}) {
             <text
             style={{ textAnchor:'start' }}
             dy=".32em"
+            x={-35}
             >{temp}</text>
         </g>
     ))
