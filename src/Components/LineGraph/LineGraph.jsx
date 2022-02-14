@@ -17,19 +17,19 @@ const innerHeight = height - margin.top - margin.bottom
 const APIkey = "c20892d228d168e22a8fbeb713c0f6c1"; 
 
 function LineGraph() {
-  const [city , setCity] = useState("madurai")
+  const [city , setCity] = useState("chennai")
   // const data = useData(APIkey , city);
   const [latAndLon , setLatAndLon] = useState([51.5098 , -0.1180])
   const [data , setData] = useState(null)
   const [toggle , setToggle] =useState(false)
 
-  const Weatherurl = `https://api.openweathermap.org/data/2.5/onecall?lat=${latAndLon[0]}&lon=${latAndLon[1]}&exclude=minutely,daily&appid=${APIkey}`;
+  const Weatherurl = `https://api.openweathermap.org/data/2.5/onecall?lat=${latAndLon[0]}&lon=${latAndLon[1]}&exclude=minutely,daily&appid=${APIkey}&units=metric`;
+  
   const url=`http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${APIkey}`
 
     const getData = async () => {
         const response = await fetch(url)
         const data = await response.json()
-        // console.log(data)
         const lat = data[0].lat;
         const lon= data[0].lon;
         setLatAndLon ([lat , lon]);
@@ -67,6 +67,7 @@ function LineGraph() {
       <SearchBar 
         handleChange={(e)=>(setCity(e.target.value))}
         handleSubmit={() => setToggle(false)}
+        value={city}
       />
       <svg height={height} width={width}>
         <g transform={`translate(${60},${10})`}>
@@ -98,7 +99,7 @@ function LineGraph() {
                   transform={`translate(${-40},${height /2}) rotate(-90)`}
                   className='axis-label'
               >
-                  temparature
+                  temparature (in Celsius)
               </text>
         </g>
       </svg>

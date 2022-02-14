@@ -1,0 +1,24 @@
+.graph-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    background-color: aquamarine;
+}
+.graph{
+    width: 200px;
+    height: 200px;
+    background-clip: unset;
+    background-position: center;
+    background-size: contain;
+    border-radius: 10px;
+}
+.homePage h1{
+    color: hsl(160, 100%, 35%);
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: hsl(160, 100%, 25%);
+}

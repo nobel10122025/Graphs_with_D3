@@ -72,7 +72,8 @@ function ScatterPlot() {
     
 
     return( 
-    <>
+    <div>
+        <h3>Iris Data Analysis Graph</h3>
         <div className='menu-container'>
             <span className='menu-label'>X</span>
             <ReactDropdown
@@ -149,7 +150,7 @@ function ScatterPlot() {
             /> 
             </g>
         </svg>
-    </>
+    </div>
     )
 }
 

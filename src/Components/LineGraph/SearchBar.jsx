@@ -1,6 +1,6 @@
 import React from 'react';
 
-function SearchBar({handleChange , handleSubmit}) {
+function SearchBar({handleChange , handleSubmit ,value}) {
   return (
       <>
         <input
@@ -8,6 +8,7 @@ function SearchBar({handleChange , handleSubmit}) {
         onChange={handleChange}
         placeholder="Enter City"
         className="search-bar"
+        value={value}
         />
         <button 
             type="button" 

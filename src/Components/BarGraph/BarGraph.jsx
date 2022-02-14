@@ -49,10 +49,10 @@ function BarGraph() {
     }
     return( 
     <>
-    <h1 >United States GDP</h1>
+    <h3>United States GDP</h3>
     <div>X axis: <strong>Time</strong> (in Year) <br/> Y axis: <strong>Gross Domestic Product</strong> (in Billions)</div>
     <svg height={height} width={width}>
-        <g transform={`translate(${0},${0})`}>
+        <g transform={`translate(${60},${10})`}>
         <Marks 
             xScale={xScale}
             yScale={yScale}

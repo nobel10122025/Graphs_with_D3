@@ -4,8 +4,7 @@ import {format} from 'd3';
 function AxisLeft({innerHeight , yScale}) {
   return (
   <>
-    <line y2={innerHeight} stroke='black'/>   
-    <text>Gross Domestic Product</text>
+    <line y2={innerHeight} stroke='black'/>
     {
         yScale.ticks().map((tickValue , index) => (
             <g transform={`translate(2,${innerHeight-yScale(tickValue) + 15})`} key={index}>
