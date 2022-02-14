@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Graphs_with_D3/static/css/main.260c6a6d.css",
+    "main.js": "/Graphs_with_D3/static/js/main.e55bb5f8.js",
+    "static/media/bar_graph.jpg": "/Graphs_with_D3/static/media/bar_graph.6ccbb35b49d04aa70a62.jpg",
+    "static/media/line__graph.jpg": "/Graphs_with_D3/static/media/line__graph.eae6d0d07ad4b081a1b1.jpg",
+    "static/media/scatter_plot.jpg": "/Graphs_with_D3/static/media/scatter_plot.10ac3a51b91f133f2d7b.jpg",
+    "index.html": "/Graphs_with_D3/index.html",
+    "main.260c6a6d.css.map": "/Graphs_with_D3/static/css/main.260c6a6d.css.map",
+    "main.e55bb5f8.js.map": "/Graphs_with_D3/static/js/main.e55bb5f8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.260c6a6d.css",
+    "static/js/main.e55bb5f8.js"
+  ]
+}
