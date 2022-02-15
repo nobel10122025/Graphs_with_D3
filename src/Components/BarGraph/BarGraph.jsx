@@ -8,9 +8,9 @@ import AxisLeft from './AxisLeft';
 import './BarGraph.css'
 
 const url = "https://raw.githubusercontent.com/freeCodeCamp/ProjectReferenceData/master/GDP-data.json"
-const width = 1240;
-const height = 600;
-const margin = {top : 20 , left : 20, right : 20 , bottom : 20}
+const width = 1240 - 120;
+const height = 600 - 100;
+const margin = {top : 20 , left : 80, right : 20 , bottom : 20}
 const innerWidth = width - margin.left - margin.right
 const innerHeight = height - margin.top - margin.bottom
 const barWidth = width / 275

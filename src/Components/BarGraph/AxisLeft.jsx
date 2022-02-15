@@ -7,7 +7,7 @@ function AxisLeft({innerHeight , yScale}) {
     <line y2={innerHeight} stroke='black'/>
     {
         yScale.ticks().map((tickValue , index) => (
-            <g transform={`translate(2,${innerHeight-yScale(tickValue) + 15})`} key={index}>
+            <g transform={`translate(-50,${innerHeight-yScale(tickValue)})`} key={index}>
                 <text textAnchor='start'>
                     {format(",.2r")(tickValue)}
                 </text>
