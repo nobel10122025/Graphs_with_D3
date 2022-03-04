@@ -4,6 +4,7 @@ import {max, min, scaleLinear, scaleTime} from 'd3';
 import Marks from './Marks';
 import AxisBottom from './AxisBottom';
 import AxisLeft from './AxisLeft';
+import ErrorBoundary from '../ErrorBoundary/ErrorBoundary';
 
 import './BarGraph.css'
 
@@ -48,7 +49,7 @@ function BarGraph() {
         return <div>Loading...</div>
     }
     return( 
-    <>
+    <ErrorBoundary>
     <h3>United States GDP</h3>
     <div>X axis: <strong>Time</strong> (in Year) <br/> Y axis: <strong>Gross Domestic Product</strong> (in Billions)</div>
     <svg height={height} width={width}>
@@ -72,7 +73,7 @@ function BarGraph() {
         />
         </g>
     </svg>
-    </>
+    </ErrorBoundary>
     )
 }
 

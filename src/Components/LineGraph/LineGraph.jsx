@@ -5,6 +5,7 @@ import Marks from './Marks';
 import AxisBottom from './AxisBottom';
 import AxisLeft from './AxisLeft';
 import SearchBar from './SearchBar';
+import ErrorBoundary from '../ErrorBoundary/ErrorBoundary';
 
 import './LineGraph.css'
 
@@ -62,6 +63,7 @@ function LineGraph() {
   const xAxisTimeFormat = timeFormat("%H:%M:%S");
   // console.log(city)
   return (
+    <ErrorBoundary>
     <div>
       <h3>Temparature Graph</h3>
       <SearchBar 
@@ -88,22 +90,22 @@ function LineGraph() {
             innerWidth={innerWidth}
           />
           <text 
-                  x={innerWidth / 2}
-                  y={ innerHeight + 45 }
-                  className='axis-label'
-              >
-                  Time(HH:MM:SS)
-              </text>
-
-              <text 
-                  transform={`translate(${-40},${height /2}) rotate(-90)`}
-                  className='axis-label'
-              >
-                  temparature (in Celsius)
-              </text>
+            x={innerWidth / 2}
+            y={ innerHeight + 45 }
+            className='axis-label'
+          >
+              Time(HH:MM:SS)
+          </text>
+          <text 
+              transform={`translate(${-40},${height /2}) rotate(-90)`}
+              className='axis-label'
+          >
+              temparature (in Celsius)
+          </text>
         </g>
       </svg>
     </div>
+    </ErrorBoundary>
   )
 }
 

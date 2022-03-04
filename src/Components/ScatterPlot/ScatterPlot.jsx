@@ -7,6 +7,7 @@ import AxisBottom from './AxisBottom';
 import AxisLeft from './AxisLeft';
 import { useData } from './useData';
 import ColorLegend from './ColorLegend';
+import ErrorBoundary from '../ErrorBoundary/ErrorBoundary';
 
 import './ScatterPlot.css'
 import 'react-dropdown/style.css';
@@ -72,6 +73,7 @@ function ScatterPlot() {
     
 
     return( 
+    <ErrorBoundary>
     <div>
         <h3>Iris Data Analysis Graph</h3>
         <div className='menu-container'>
@@ -151,6 +153,7 @@ function ScatterPlot() {
             </g>
         </svg>
     </div>
+    </ErrorBoundary>
     )
 }
 
